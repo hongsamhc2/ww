@@ -28,7 +28,7 @@ class RLEnv:
         obs = None
         if self.iloc < len(self.df):
             obs = self.df.iloc[self.iloc].values
-            obs = np.append(obs,np.array(self.reward))
+            obs[-1] = self.reward
         return obs
 
     def next_step(self,action,quant):

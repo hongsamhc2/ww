@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 import RLEnvTrain,RLAgent
-import time
+import test
 from tqdm import tqdm
 import os
 os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
@@ -9,8 +9,14 @@ import tensorflow as tf
 tf.compat.v1.logging.set_verbosity(tf.compat.v1.logging.ERROR)
 
 df = pd.read_csv('.\\DB\\CSV\\daily\\DA000020_ch.csv')
+df['profit'] = 0
+df_obs = df.iloc[119:int(len(df)*0.6),:].copy()
+df_obs = df_obs.reset_index()
+df_obs = df_obs.drop(['index'],axis =1)
 
-env = RLEnvTrain.RLEnv(df)
+
+
+env = RLEnvTrain.RLEnv(df_obs)
 agent = RLAgent.Agent()
 reward_list = []
 action_List = []
@@ -21,8 +27,14 @@ for k in range(50):
     sub_action_list = []
     sub_quant_list=[]
     sub_re_list = []
-    for i in tqdm(range(800)):
 
+    df_prev = df.iloc[:119].copy()
+    data = obs.reshape(1, -1)
+    data = pd.DataFrame(data, columns=df_prev.columns)
+    df_prev = pd.concat([df_prev, data], ignore_index=True)
+    obs = test.add_feature(df_prev)
+
+    for i in tqdm(range(800)):
 
         action,action_per = agent.policy(obs)
         cash,stock_cnt = env.cash,env.total_stock
@@ -37,6 +49,10 @@ for k in range(50):
         sub_action_list.append(action)
         sub_quant_list.append(quant)
         next_obs, reward, done, info = env.next_step(action, quant)
+        data = next_obs.reshape(1, -1)
+        data = pd.DataFrame(data, columns=df_prev.columns)
+        df_prev = pd.concat([df_prev, data], ignore_index=True)
+        next_obs = test.add_feature(df_prev)
         sub_re_list.append(reward)
         agent.memorize_transition(obs,action,reward,next_obs,0.0 if done else 1.0)
         if agent.train:
