@@ -1,0 +1,298 @@
+html,
+body {
+    height: 100%;
+}
+
+header {
+    float: left;
+    width: 100%;
+    height: 10px;
+
+}
+
+/*wrapper*/
+#wrapper {
+    float: left;
+    width: 100%;
+    margin-bottom: 500px;
+}
+
+#wrapper > .title {
+    text-align: center;
+    margin: 30px 0 50px 0;
+}
+
+/* insert section */
+#wrapper > #insert {
+    float: left;
+    width: 40%;
+}
+
+#wrapper > #insert > .insertsection {
+    float: left;
+    width: 96%;
+    margin-left: 10px;
+    margin-bottom: 20px;
+}
+
+#wrapper > #insert > #senddata,
+#downdata {
+    float: left;
+    width: 45%;
+    height: 40px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 40px;
+    cursor: pointer;
+    border: 1px solid #f2efef;
+
+}
+
+#wrapper > #insert > #downdata:active {
+    box-shadow: inset 2px 2px 2px 1px #f2efef;
+}
+
+
+#wrapper > #insert > .insertsection .subtitle {
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+
+#wrapper > #insert > .insertsection > .inputsection {
+    float: left;
+    width: 96%;
+    margin: 30px 2% 20px 2%;
+}
+
+#wrapper > #insert > .insertsection > .inputsection > .keyvalue {
+    float: left;
+    width: 98%;
+    height: 30px;
+    margin-top: 30px;
+
+
+}
+
+#wrapper > #insert > .insertsection > .inputsection > .keyvalue > #url {
+    float: left;
+    width: 320px;
+}
+
+#wrapper > #insert > .insertsection > .inputsection > .keyvalue > #key {
+    float: left;
+    width: 320px;
+}
+
+#wrapper > #insert > .insertsection > .inputsection > .keyvalue > label {
+    float: left;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+
+#wrapper > #insert > .insertsection > .inputsection > .keyvalue > input {
+    float: left;
+    width: 150px;
+    height: 30px;
+    margin-left: 10px;
+    border-radius: 10px;
+    border: 1px solid lightgray;
+    box-shadow: inset 2px 2px 2px 1px lightgray;
+}
+
+#wrapper > #insert > .insertsection > .inputsection > .keyvalue > input:focus {
+    outline: none;
+    border-color: lightskyblue;
+    box-shadow: inset 2px 2px 2px 1px lightskyblue;
+
+}
+
+#wrapper > #insert > .insertsection > .inputsection > .keyvalue > .delete {
+    float: right;
+    position: relative;
+    margin-left: 30px;
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid #f2efef;
+    box-shadow: 2px 2px 2px 1px #f2efef;
+    cursor: pointer;
+}
+
+#wrapper > #insert > .insertsection > .inputsection > .keyvalue > .delete:active {
+    box-shadow: inset 2px 2px 2px 1px #f2efef;
+}
+
+
+#wrapper > #insert > .insertsection > .inputsection > .keyvalue > .delete > span {
+    width: 20px;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 1px;
+    background-color: black;
+    transform: translate(-50%) rotate(45deg);
+
+}
+
+#wrapper > #insert > .insertsection > .inputsection > .keyvalue > .delete > span:nth-child(2) {
+    transform: translate(-50%) rotate(135deg);
+}
+
+
+
+#wrapper > #insert > .insertsection > .inputsection > #addinput {
+    float: left;
+    width: 98%;
+    height: 30px;
+    margin: 30px 0 30px 0;
+    cursor: pointer;
+    line-height: 30px;
+    border-radius: 10px;
+    border: 1px solid #f2efef;
+    box-shadow: 2px 2px 2px 1px #f2efef;
+    text-align: center;
+}
+
+#wrapper > #insert > .insertsection > .inputsection > #addinput:active {
+    box-shadow: inset 2px 2px 2px 1px #f2efef;
+}
+
+
+
+
+/* data table section */
+
+#wrapper > #datatable {
+    float: left;
+    width: 58%;
+    margin-left: 1%;
+    margin-right: 1%;
+    overflow-x: auto;
+}
+
+#wrapper > #datatable > .tablesection {
+    width: 100%;
+}
+
+#wrapper > #datatable > .tablesection > p {
+    width: 94%;
+    margin: 10px 3% 10px 3%;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+/*error*/
+
+.error {
+    width: 100%;
+    height: 40px;
+    margin: 10px 0 10px 0;
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    color: red;
+
+}
+
+/* table */
+table {
+    white-space: nowrap;
+}
+
+thead {
+    display: inline-block;
+    float: left;
+    height: 50px;
+}
+
+thead > tr > th {
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+thead > tr > th:nth-child(1) {
+    width: 100px;
+}
+
+tr {
+    position: relative;
+    float: left;
+    display: inline-block;
+    text-align: center;
+    line-height: 50px;
+    border-bottom: 2px solid lightgray;
+
+}
+
+tbody > tr:hover {
+    box-shadow: 5px 5px 5px 2px lightgray;
+    background-color: lightskyblue;
+    border-bottom: 2px solid skyblue;
+    top: -10px;
+    left: -10px;
+}
+
+tbody > tr > th {
+    display: inline-block;
+    width: 100px;
+
+}
+
+td {
+    display: inline-block;
+    width: 200px;
+    height: 50px;
+}
+
+/* footer */
+footer {
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 100;
+}
+
+/*font style*/
+.title {
+    font-size: 50px;
+    font-weight: 900;
+    color: black;
+}
+
+.subtitle {
+    text-align: center;
+    margin: 10px 0 10px 0;
+    font-size: 30px;
+    font-weight: 600;
+}
+
+label {
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* util */
+.btn-click:active {
+    box-shadow: inset 2px 2px 2px 1px #f2efef;
+}
+
+.box-shadow {
+    box-shadow: 2px 5px 10px 1px lightgray;
+    border-radius: 10px;
+    background-color: white;
+}
+
+/*media*/

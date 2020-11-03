@@ -1,0 +1,477 @@
+html,
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    height: 100%;
+
+}
+
+header {
+    width: 100%;
+}
+
+footer {
+    float: left;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 0.5vw;
+    background-color: white;
+}
+
+
+#main {
+    float: left;
+    width: 100%;
+    position: relative;
+}
+
+#wrapper {
+    float: left;
+    position: relative;
+    width: 77vw;
+    left: 18vw;
+    margin-bottom: 2vw;
+}
+
+
+#sidebar {
+    float: left;
+    display: flex;
+    position: fixed;
+    top: 50vh;
+    transform: translate(0, -50%);
+    z-index: 10;
+
+}
+
+nav {
+    float: left;
+    width: 200px;
+    transition: 0.4s linear;
+}
+
+.menu {
+    float: left;
+    width: 3vw;
+    height: inherit;
+    display: none;
+}
+
+.menu > span {
+    display: inline-block;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    color: white;
+    background-color: black;
+    text-align: center;
+    width: 12vw;
+    height: 4vw;
+    font-size: 2vw;
+    line-height: 4vw;
+    letter-spacing: 0.3vw;
+    transform: translate(-50%, -50%) rotate(270deg);
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0px;
+}
+
+#sidebarul {
+    padding-left: 65px;
+
+}
+
+li {
+    font-size: 20px;
+    width: 135px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    font-weight: 100;
+}
+
+
+/*index content*/
+#index {
+    height: calc(100vh - 100px);
+    float: left;
+    position: relative;
+    width: 80vw;
+    left: 20vw;
+}
+
+#maintext {
+    position: absolute;
+    top: 50%;
+    left: 10vw;
+    transform: translate(0, -50%);
+    font-size: 8vw;
+    color: #f41f56;
+    font-weight: 700;
+    z-index: 2;
+}
+
+#mainsubtext {
+    position: absolute;
+    top: calc(50% + 13vw);
+    left: calc(10vw);
+    transform: translate(0, -50%);
+    z-index: 2;
+}
+
+#mainsubtext > p:nth-child(1) {
+    font-size: 3vw;
+}
+
+#mainsubtext > p:nth-child(2) {
+    font-size: 1.5vw;
+    margin-top: 1vw;
+}
+
+#mainimg {
+    position: absolute;
+    float: left;
+    top: 50vh;
+    left: 60vw;
+    transform: translate(-50%, -50%);
+    width: 45vw;
+    z-index: 1;
+}
+
+#mainimg > img {
+    max-width: 100%;
+}
+
+/* about page*/
+
+
+#aboutimg {
+    float: left;
+    position: relative;
+    width: 36vw;
+}
+
+#aboutimg > img {
+    float: left;
+    width: 100%;
+}
+
+#moto {
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    font-size: 1.6vw;
+}
+
+#moto > span {
+    display: inline-block;
+    height: 200%;
+    line-height: 200%;
+    margin-left: 10%;
+    width: 35%;
+    color: white;
+}
+
+.moto-right-text {
+    font-weight: 700;
+}
+
+#moto > .margin {
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#myname {
+    float: left;
+    text-align: center;
+    font-size: 2vw;
+    font-weight: 900;
+    margin-left: 5%;
+    margin-top: 0.5vw;
+}
+
+#introduce {
+    float: left;
+    position: relative;
+    margin-left: 5vw;
+    width: 32vw;
+    margin-top: 5vw;
+}
+
+
+#introducedesc > span {
+    display: inline-block;
+    font-size: 1.6vw;
+    font-weight: 700;
+
+}
+
+#introducedesc > p {
+    font-size: 1vw;
+    font-weight: 200;
+    margin-top: 1vw;
+    width: 100%;
+    line-height: 1.2vw;
+}
+
+
+
+
+
+#myskills {
+    float: left;
+    position: relative;
+    margin-top: 5vw;
+    margin-left: 5vw;
+    width: 32vw;
+
+}
+
+
+
+#myskills > .skill {
+    float: left;
+    width: 100%;
+    margin-bottom: 0.4vw;
+}
+
+#myskills > .skill:nth-last-child(1) {
+    margin-bottom: 0;
+}
+
+#myskills > .skill > .skillname {
+    display: inline-block;
+    font-size: 1.2vw;
+    font-weight: 500;
+    margin-bottom: 0.5vw;
+    width: 30vw;
+}
+
+#myskills > .skill > .progressbar {
+    display: inline-block;
+    position: relative;
+    width: 80%;
+    height: 0.8vw;
+    background-color: #d6d3d3;
+    border-radius: 1vw;
+}
+
+#myskills > .skill > .progressbar > .gauge {
+    display: inline-block;
+    position: absolute;
+    width: 10%;
+    height: 0.8vw;
+    background-color: #3abff7;
+    border-radius: 1vw;
+}
+
+#myskills > .skill > .skillper {
+    display: inline-block;
+    width: 5vw;
+    height: 1.2vw;
+    text-align: center;
+    font-size: 0.8vw;
+    font-weight: 100;
+}
+
+
+/* portfolio */
+
+
+
+.content {
+    float: left;
+    margin-top: 5vw;
+    margin-left: 4%;
+    width: 28%;
+    border-radius: 2vw;
+    box-shadow: 0.3vw 0.3vw 1vw 1vw #f2efef;
+    padding: 3vw 0 3vw 0;
+}
+
+.content:hover {
+    position: relative;
+    top: -10px;
+    left: -10px;
+    box-shadow: 5px 5px 10px 5px lightgray;
+
+}
+
+.content > .image {
+    float: left;
+    width: 80%;
+    height: 10vw;
+    margin: 0 10% 0 10%;
+    overflow: hidden;
+}
+
+.content > .image > img {
+    max-width: 100%;
+
+}
+
+.content > .textcontent {
+    float: left;
+    width: 80%;
+    margin-left: 10%;
+}
+
+.content > .textcontent > .subtitle {
+    font-size: 1.4vw;
+    font-weight: 600;
+    margin-top: 5%;
+
+}
+
+.content > .textcontent > .subtitle > span {
+    padding: 1vw 0 1vw 0;
+    color: white;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    display: inline-block;
+}
+
+.content > .textcontent > .subdescription {
+    font-size: 1vw;
+    font-weight: 100;
+    text-align: center;
+    margin-top:1vh;
+}
+
+.content > .textcontent > .subdescription > span {
+    display: inline-block;
+    width: 100%;
+    line-height: 1.4vw;
+
+    text-align: left;
+}
+
+.content > .textcontent > .sublink {
+    font-size: 1.4vw;
+    font-weight: 500;
+    margin-top: 2vw;
+    text-align: center;
+}
+
+.content > .textcontent > .sublink > span {
+    display: inline-block;
+    text-align: left;
+}
+
+/* contact */
+
+
+
+
+
+
+.contactinfo > span {
+    display: inline-block;
+    width: 100%;
+    height: 2vw;
+    background-color: white;
+
+}
+
+.contactinfo > .inquiries {
+    float: left;
+    width: 30%;
+    height: calc(100vh - 100px);
+    background-color: #eeeeee;
+}
+
+.contactinfo > .inquiries > span {
+    width: calc(100% - 1vw);
+    display: inline-block;
+    margin-top: 4vw;
+    margin-left: 1vw;
+
+}
+
+
+.contactform {
+    float: left;
+    width: 60%;
+    height: calc(100vh - 100px);
+}
+
+.contactform > form {
+    float: left;
+    width: 80%;
+    padding-left: 10%;
+    margin-top: 2vw;
+}
+
+.contactform > form > label {
+    display: inline-block;
+    width: 20%;
+    height: 2.4vw;
+    font-size: 1.6vw;
+    font-weight: 300;
+    vertical-align: top;
+    margin-top: 3vw;
+
+
+}
+
+.contactform > form > input {
+    width: 70%;
+    height: 2.4vw;
+    margin-top: 3vw;
+    border: 1px solid black;
+}
+
+.contactform > form > input:focus {
+    border: 1px solid black;
+    background: lightgray;
+}
+
+.contactform > form > input:nth-last-child(1) {
+    width: 72%;
+    margin-left: 20%;
+    border: 1px solid black;
+    cursor: pointer;
+
+}
+
+.contactform > form > #msg {
+    height: 8vw;
+}
+
+/*font-style*/
+.title {
+    width: 95%;
+    font-size: 3vw;
+    font-weight: 900;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    text-align: left;
+    padding: 0.5vw 0 0.5vw 0;
+    padding-left: 5%;
+    background-color: #eeeeee;
+}
+
+.subtitle {
+    width: 100%;
+    margin-bottom: 1vw;
+    display: inline-block;
+    font-size: 1.6vw;
+    font-weight: 700;
+    margin-top: 2vw;
+}
+
+.thin10 {
+    font-size: 1vw;
+    font-weight: 100;
+}
+
+.thin20 {
+    font-size: 1.2vw;
+    font-weight: 100;
+}
+
+/* utility */

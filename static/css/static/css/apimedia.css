@@ -1,0 +1,87 @@
+@media (max-width:1370px) {
+    #wrapper > #insert > .insertsection > .inputsection > .keyvalue > label {
+        width: 60%;
+        text-align: left;
+        font-size: 20px;
+    }
+
+    #wrapper > #insert > .insertsection > .inputsection > .keyvalue > input {
+        width: 98%;
+        margin: 10px 0 10px 0;
+    }
+
+    #wrapper > #insert > .insertsection > .inputsection > .keyvalue > #url {
+        width: 98%;
+
+    }
+
+    #wrapper > #insert > .insertsection > .inputsection > .keyvalue > #key {
+        width: 98%;
+
+    }
+
+    #wrapper > #insert > .insertsection > .inputsection > .keyvalue {
+        height: auto;
+    }
+}
+
+
+@media (max-width:900px) {
+    #wrapper > #insert {
+        width: 100%;
+    }
+
+    #wrapper > #datatable {
+        width: 100%;
+    }
+
+    #wrapper > #insert > .insertsection > .inputsection > .keyvalue{
+        margin-top: 0;
+    }
+    
+    
+    
+    #wrapper > #insert > .insertsection{
+        width: 100%;
+    }
+    
+    .title{
+        font-size: 40px;
+    }
+}
+
+@media (max-width:540px) {
+    
+    
+    .title{
+        font-size: 20px;
+    }
+    
+    .subtitle{
+        font-size: 15px;
+    }
+    #wrapper > #insert > .insertsection > .inputsection{
+        margin-top: 5px;
+        margin-bottom:5px;
+    }
+    #wrapper > #insert > .insertsection > .inputsection > .keyvalue > label {
+        font-size: 10px;
+    }
+    
+    #wrapper > #insert > .insertsection > .inputsection > .keyvalue > input {
+        height: 20px;
+    }
+    
+    #wrapper > #insert > .insertsection > .inputsection > .keyvalue > .delete{
+        display: inline-block;
+        line-height: 20px;
+        top:5px;
+        width: 20px;
+        height: 20px;
+    }
+    
+    #wrapper > #insert > .insertsection > .inputsection > #addinput{
+        margin:5px 0 5px 0;
+    }
+
+}
